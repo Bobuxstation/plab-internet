@@ -24,12 +24,12 @@ input.addEventListener("keypress", function (event) {
         if (!input.value.includes("/")) {
             var directory = (input.value + "/").split("/")
             var subdomains = directory[0].split(".").reverse()
-            var fullURL = "./"
+            var fullURL = window.location.origin + window.location.pathname.split('/').slice(0,2).join('/')
             var extDirectory = ""
         } else {
             var directory = input.value.split("/")
             var subdomains = directory[0].split(".").reverse()
-            var fullURL = "./"
+            var fullURL = window.location.origin + window.location.pathname.split('/').slice(0,2).join('/')
             var extDirectory = ""
         }
 
