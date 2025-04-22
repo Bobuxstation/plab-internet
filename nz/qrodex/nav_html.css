@@ -1,0 +1,46 @@
+a { color:#000000; } 
+a:visited { color:#000000; } 
+a:active { color:#000000; } 
+a:hover { color:#000000; } 
+body { background-color:#FFFFFF; padding:0;  margin: 0; }
+.textstyle1 { text-align:left; }
+.textstyle2 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+#container_4bd8ccd3 { box-sizing: border-box; vertical-align: top; position:relative; display: inline-block; width:100%; background-color:#BDBDBD; background-image: url(rc_images/dall_e_2023_04_11_21_48_06____the_qrodex_ddxx___dxxd___9_1_legend_edition___a_cutting_edge_processor__covered_in_nuclear_waste__digital_art.png); background-position:center center; background-size:cover; border: 0px solid #545454;  }
+#container_19690fcc { vertical-align: top; position:relative; display: inline-block; width:100%; background-color:rgba(0, 0, 0, 0.74902);  }
+#container_19690fcc_padding { margin: 10px 20px 10px 20px;display: block;  }
+#img_1001a78e { vertical-align: bottom; position:relative; display: inline-block; width:125px; background:none; height:auto;  }
+#text_6848ba0 { vertical-align: bottom; position:relative; display: inline-block; margin:0px 0px 0px 10px;background:none;  }
+.textstyle3 { font-size:12pt; font-family:Metropolis, Arial, Helvetica, sans-serif; color:#808080; font-weight:bold;  }
+.textstyle4 { font-size:12pt; font-family:Metropolis, Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold;  }
+.textstyle5 { font-size:12pt; font-family:Metropolis, Arial, Helvetica, sans-serif; color:#7D4040; font-weight:bold;  }
+#container_1e24092a { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background-color:#1D1D1D;  }
+#container_78250f0d { vertical-align: top; position:relative; display: inline-block; width:20%; min-height:100px; background-color:#1D1D1D; background-image: url(rc_images/dall_e_2023_04_11_21_48_06____the_qrodex_ddxx___dxxd___9_1_legend_edition___a_cutting_edge_processor__covered_in_nuclear_waste__digital_art.png); background-position:center center; background-size:cover;  }
+#container_552d7807 { box-sizing: border-box; vertical-align: top; position:relative; display: inline-block; width:100%; background-color:rgba(0, 0, 0, 0.74902); border: 0px solid #545454;  }
+#container_552d7807_padding { margin: 0px 20px 20px 20px;display: block;  }
+.textstyle6 { text-align:justify; }
+.textstyle7 { font-size:24pt; font-family:'Roblox 2017', Impact; color:#FFFFFF; line-height: 2.0;  }
+.textstyle8 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold; line-height: 2.0;  }
+#container_9022bbf { vertical-align: top; position:relative; display: inline-block; width:80%; background:none;  }
+#placeh_1497f3b4 { box-sizing: border-box; vertical-align: bottom; position:relative; display: inline-block; width:100%; background-color:#1D1D1D; border: 0px solid #A0A0A0;  }
+#container_38b56572 { vertical-align: top; position:relative; display: inline-block; width:100%; background-color:#000000;  }
+#container_3abda5d0 { vertical-align: top; position:relative; display: inline-block; width:100%; background:none;  }
+#container_3abda5d0_padding { margin: 10px 20px 10px 20px;display: block;  }
+#container_95f5da2 { vertical-align: top; position:relative; display: inline-block; width:50%; background:none;  }
+#container_95f5da2_padding { margin: 10px; display: block;  }
+.textstyle9 { text-align:right; }
+#img_4a4b29ab { vertical-align: bottom; position:relative; display: inline-block; width:125px; background:none; height:auto;  }
+#container_7e041a8c { vertical-align: top; position:relative; display: inline-block; width:50%; background:none;  }
+#container_7e041a8c_padding { margin: 10px; display: block;  }
+.textstyle10 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#808080; font-weight:bold;  }
+#img_d65920a { vertical-align: bottom; position:relative; display: inline-block; margin:0px 10px 0px 0px;width:40px; background:none; height:auto;  }
+#img_62709428 { vertical-align: bottom; position:relative; display: inline-block; margin:0px 10px 0px 0px;width:40px; background:none; height:auto;  }
+@media only screen and (max-width: 400px)
+{
+		#container_95f5da2 { width:100%;  }
+		#container_7e041a8c { width:100%;  }
+}
+@media only screen and (max-width: 200px)
+{
+		#container_78250f0d { width:100%;  }
+		#container_9022bbf { width:100%;  }
+}

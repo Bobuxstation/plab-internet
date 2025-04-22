@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="urlparser.js" defer></script>
+    <script src="fa.js"></script>
+
+    <title>PlabNet</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <button onclick="document.getElementById('iframe').src = 'bu/hub'">
+            <i class="fa-solid fa-home"></i>
+        </button>
+
+        <button onclick="reloadIframe()">
+            <i class="fa-solid fa-refresh"></i>
+        </button>
+
+        <span id="title">Home</span>
+
+        <input id="url-bar" placeholder="Type a URL" style="float: right;">
+
+        <select style="float: right;">
+            <option>plab://</option>
+        </select>
+    </div>
+    <div class="content">
+        <iframe id="iframe" src="bu/hub"></iframe>
+    </div>
+</body>
+
+</html>
