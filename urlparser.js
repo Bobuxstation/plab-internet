@@ -1,5 +1,6 @@
 var input = document.getElementById("url-bar");
 var iframe = document.getElementById("iframe");
+iframe.src = window.location.origin + window.location.pathname.split('/').slice(0,2).join('/') + '/bu/hub'
 
 function reloadIframe() {
     try {
