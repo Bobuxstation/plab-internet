@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="vote logo.png">
+
+    <title>Ministry of Elections</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/faker/dist/faker.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica;
+            box-sizing: border-box;
+        }
+
+        header {
+            font-family: transport;
+            background-color: #2d2d2d;
+            padding: 10px;
+            color: white;
+        }
+
+        header img {
+            right: 10px;
+            box-shadow: 0px 0px 10px #000000ab;
+            position: absolute;
+        }
+
+        section {
+            background-color: #6d6d6d;
+            min-height: 25vh;
+            display: flex;
+            place-items: center;
+            justify-content: center;
+            color: white;
+            font-family: transport;
+        }
+
+        marquee {
+            padding: 10px;
+            background-color: #7d7d7d;
+            color: white;
+        }
+
+        .container {
+            padding: 25px;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        th {
+            width: 50%;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .border th {
+            border-top: black solid 1px;
+        }
+
+        input,
+        button,
+        select {
+            padding: 5px;
+        }
+
+        select,
+        .submitbutton {
+            width: 221px;
+        }
+
+        .myid {
+            background: lightblue;
+            padding: 15px;
+            border: dodgerblue solid 1px;
+            border-radius: 10px;
+        }
+
+        span {
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="vote logo.png" width="50">
+        Ministry of Elections
+    </header>
+
+    <section>
+        <h1>Your vote, your voice. Shape the future!</h1>
+    </section>
+
+    <marquee>President Dean Bender Announces Resignation Amid Pressure: “I Should Have Stopped After Becoming a
+        Successful Philanthropy Creator. This Job Is Not for Me”, Says Bender at Kugae Parliament</marquee>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>
+                    <input placeholder="Citizen ID" id="citizenid" oninput="doCheck(this.value)">
+                    <button onclick="getCitizenID(document.getElementById('citizenid').value)" id="submitbtn"
+                        disabled>Submit</button>
+
+                    <br><br>
+
+                    <select>
+                        <option>Select your preferred president</option>
+                        <optgroup label="Demokratie Fur Kugae">
+                            <option>1. Sean Zender & Darek Morong</option>
+                        </optgroup>
+                        <optgroup label="People of Wohlhabend">
+                            <option>2. Darren Watkins & Adin Ross</option>
+                        </optgroup>
+                        <optgroup label="NZ Arbeiterpartei">
+                            <option>3. Jimmy Donaldson & Chandler Hallow</option>
+                        </optgroup>
+                        <optgroup label="Anonymouspartei">
+                            <option>4. Anonymous & Anonymous 2</option>
+                        </optgroup>
+                        <optgroup label="Ostglorreiche Liberale Partei">
+                            <option>5. Rahman Ju & Chaska Nazim</option>
+                        </optgroup>
+                        <optgroup label="Technocrats of New Zeanland">
+                            <option>6. Perrell Ambatron & ChatGPT</option>
+                        </optgroup>
+                        <optgroup label="Zwei Schritte Vorwärts">
+                            <option>7. Nicholas Perry & Amogus Apple</option>
+                        </optgroup>
+                        <optgroup label="Friedmann Liberal Group">
+                            <option>8. Angela Friedmann & Joseph Fisch</option>
+                        </optgroup>
+                        <optgroup label="Great Hattin">
+                            <option>9. Salahudin IX & Baldwin XII</option>
+                        </optgroup>
+                        <optgroup label="Glorreiche Grove">
+                            <option>10. Goku & Carl Johnson</option>
+                        </optgroup>
+                        <optgroup label="Ballas Clans">
+                            <option>11. Melvin Harris & Hog Rider</option>
+                        </optgroup>
+                        <optgroup label="YouTube Politische Partei">
+                            <option>12. Windah Basudara & Reggie Prabowo</option>
+                        </optgroup>
+                        <optgroup label="White Forest">
+                            <option>13. Gordon Freeman & Eli Vance</option>
+                        </optgroup>
+                        <optgroup label="Rechtsfuß">
+                            <option>14. Quandale Dingle & Kracc Bacc</option>
+                        </optgroup>
+                    </select>
+
+                    <br><br>
+
+                    <select>
+                        <option>Select your preferred party</option>
+                        <option>Demokratie Fur Kugae</option>
+                        <option>People of Wohlhabend</option>
+                        <option>NZ Arbeiterpartei</option>
+                        <option>Anonymouspartei</option>
+                        <option>Ostglorreiche Liberale Partei</option>
+                        <option>Technocrats of New Zeanland</option>
+                        <option>Zwei Schritte Vorwärts</option>
+                        <option>Friedmann Liberal Group</option>
+                        <option>Great Hattin</option>
+                        <option>Glorreiche Grove</option>
+                        <option>Ballas Clans</option>
+                        <option>YouTube Politische Partei</option>
+                        <option>White Forest</option>
+                        <option>Rechtsfuß</option>
+                    </select>
+
+                    <br><br>
+
+                    <button class="submitbutton" onclick="alert('Demo Finished!'); window.location.reload()">Submit my
+                        vote!</button>
+                </th>
+                <th style="text-align: left;">
+                    <div class="myid">
+                        <b>New Zeanland Citizen Identification</b><br><br>
+                        <strong>Name:</strong> <span id="name">-</span><br>
+                        <strong>Date of Birth:</strong> <span id="birthdate">-</span><br>
+                        <strong>Gender:</strong> <span id="gender">-</span><br>
+                        <strong>Address:</strong> <span id="city">-</span><br>
+                        <strong>Job:</strong> <span id="job">-</span><br>
+                        <strong>Religion:</strong> <span id="religion">-</span>
+                    </div>
+
+                    <br>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">Issues voting?</a><br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Where is my Citizen ID?</a><br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Who should i vote?</a>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        const cities = [
+            "Neue Glorreiche, West Kugae",
+            "Kugae-Stadt, East Kugae",
+            "Bavri, East Kugae",
+            "Wohlhabend, East Kugae",
+            "Meving, East Kugae",
+            "Hafenkugae, West Kugae",
+            "H. Fean/Zendergrad, East Kugae",
+            "Meine, East Glorreiche",
+            "Ortakent-Brücke, West Kugae",
+            "Baumwollhaven, East Glorreiche",
+            "Eisbrückenfeld, East Glorreiche",
+            "Ostglorreiche-Stadt, East Glorreiche"
+        ];
+
+        const religions = [
+            "Feanism",
+            "Deanism",
+            "Islam",
+            "Judaism",
+            "Christianity",
+            "Hinduism",
+            "Buddhism",
+            "Local Paganism",
+            "-"
+        ];
+
+        const gender = [
+            "Male",
+            "Female"
+        ];
+
+        function doCheck(text) {
+            if (text.length > 12) {
+                document.getElementById("submitbtn").disabled = false
+            } else {
+                document.getElementById("submitbtn").disabled = true
+            }
+        }
+
+        function mulberry32(seed) {
+            return function () {
+                seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+                var t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+                t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+                return ((t ^ t >>> 14) >>> 0) / 4294967296;
+            }
+        }
+
+        function getRandom(seed, array) {
+            const seededRandom = mulberry32(seed);
+
+            const randomIndex = Math.floor(seededRandom() * array.length);
+            return array[randomIndex];
+        }
+
+        function getBirthDate(seed) {
+            const today = new Date("9/10/2021");
+            const year = today.getFullYear();
+
+            const seventeenYearsAgo = new Date();
+            seventeenYearsAgo.setFullYear(year - 17);
+            const maxTimestamp = seventeenYearsAgo.getTime();
+
+            const eightyYearsAgo = new Date();
+            eightyYearsAgo.setFullYear(year - 80);
+            const minTimestamp = eightyYearsAgo.getTime();
+
+            const seededRandom = mulberry32(seed);
+            const randomTimestamp = minTimestamp + Math.floor(seededRandom() * (maxTimestamp - minTimestamp));
+
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            return new Date(randomTimestamp).toLocaleDateString("en-US", options);
+        }
+
+        function getCitizenID(idNumber) {
+            faker.seed(parseInt(idNumber));
+
+            document.getElementById('name').textContent = faker.name.firstName() + " " + faker.name.lastName();
+            document.getElementById('city').textContent = faker.address.streetAddress() + ", " + getRandom(idNumber, cities);
+            document.getElementById('job').textContent = faker.name.jobTitle();
+            document.getElementById('religion').textContent = getRandom(idNumber, religions);
+            document.getElementById('gender').textContent = getRandom(idNumber, gender);
+            document.getElementById('birthdate').textContent = getBirthDate(idNumber);
+        }
+    </script>
+</body>
+
+</html>
