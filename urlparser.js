@@ -13,7 +13,7 @@ function reloadIframe() {
 
 function sharePage(inMarkdown) {
     try {
-        var copyURL = new URL(window.location.origin)
+        var copyURL = new URL(window.location.origin + window.location.pathname.split('/').slice(0, 2).join('/'))
         copyURL.searchParams.set('url', currentURL)
 
         if (inMarkdown) {
