@@ -71,6 +71,7 @@ function loadUrl(url) {
 input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
+        if (input.value == "") return;
         loadUrl(input.value)
     }
 })
