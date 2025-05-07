@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strike First, Shield Always - NUXCORP</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Lexend';
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #393939;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px 10px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            width: auto;
+            margin-left: 6px;
+        }
+
+        .nav-logo span {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #ffd700;
+        }
+
+        /* Header Section */
+        header {
+            height: 91vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        header h2,
+        header p,
+        header a {
+            position: relative;
+            z-index: 1;
+        }
+
+        header h2 {
+            font-size: 3rem;
+            margin: 0px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 0px 0px 20px 0px;
+        }
+
+        header a.button {
+            background: none;
+            color: white;
+            border: white solid 1px;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header a.button:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        .products article {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #7D4040;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            position: absolute;
+        }
+
+        @media (pointer:none),
+        (pointer:coarse) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="logo.png" alt="SMDF Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Who We Are</a></li>
+            <li><a href="#about">What We Do</a></li>
+            <li><a href="#products">Featured Products</a></li>
+            <li><a href="#victories">Victories With NUXCORP</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <video src="bg.mp4" autoplay loop muted></video>
+        <div>
+            <h2>Strike First, Shield Always.</h2>
+            <p>Delivering our nation's strongest line of defense.</p>
+            <br>
+            <a href="#about" class="button">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Who We Are, What We Do</h2>
+
+        <p>
+            NUXCORP is a state-owned defense and security powerhouse founded in 1985 in Narvia State, Asatland,
+            following the end of the nation's brutal civil war and the overthrow of the old regime. Born from the ashes
+            of conflict, NUXCORP was established to ensure that Asatland would never again be unprepared. Today, we are
+            the backbone of the nation’s strategic defense—designed, built, and operated in service of lasting
+            sovereignty.
+        </p>
+
+        <p>
+            We engineer and deploy cutting-edge defense systems to protect nations and preserve peace through strength.
+            From next-gen battleships and hypersonic missile systems to early warning AI networks and retractable
+            civilian bunker-homes, NUXCORP delivers total-domain dominance—on land, sea, air, and cyberspace.
+        </p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+
+        <article>
+            <h3>⚓ Naval Dominance Systems</h3>
+            <p>DF-25 "Dreadfade" Heavy Battleship - Heavy-armored warship with autonomous drone-launch bays and laser
+                CIWS (Close-In Weapon System).</p>
+        </article>
+
+        <article>
+            <h3>🚀 Precision Strike Systems</h3>
+            <p>TS-40 "Athernos" Hypersonic Missile - Mach 7+ strike missile with terrain-hugging flight and multi-target
+                warhead.</p>
+        </article>
+
+        <article>
+            <h3>🛡️ Air Defense Systems</h3>
+            <p>"GLASSDOME" Air Defense - City-scale anti-air and anti-missile umbrella system with quantum radar
+                tracking.</p>
+        </article>
+
+        <article>
+            <h3>🧠 Cyber Defense Systems</h3>
+            <p>"Bjorn" Sentinel AI - Autonomous cyber defense system with real-time threat detection, quantum
+                encryption, and active countermeasures.</p>
+        </article>
+
+        <article>
+            <h3>📡 Surveillance Technologies</h3>
+            <p>H-2A "Hawk" Surveillance Drone - High-altitude drone with multi-spectrum surveillance and early warning
+                relay.</p>
+        </article>
+
+        <article>
+            <h3>🏭 Civilian Infrastructure</h3>
+            <p>"Drijvende" Prefabricated Housing Units - Retractable housing units that descend into underground bunkers
+                during strikes, offering reinforced protection and self-sustaining systems. Available in industrial
+                variants.</p>
+        </article>
+    </section>
+
+    <section id="victories" class="products">
+        <h2>Recent Victories With NUXCORP</h2>
+
+        <article>
+            <h3>South Maritimian Civil War</h3>
+            <p>The SMDF’s successful capture of Salmon Island was decisively supported by the DF-25 Dreadfade heavy
+                battleship.
+            </p>
+        </article>
+
+        <article>
+            <h3>Plab War on Terror</h3>
+            <p>ISDPO terror attacks across multiple countries were brought to an end through coordinated strikes on
+                their bases—delivered with precision by the TS-40 Athernos hypersonic missile.
+            </p>
+        </article>
+
+        <article>
+            <h3>IADOS Cyber Attacks</h3>
+            <p>The Asatland Communications Ministry successfully detected and neutralized a wave of cyber attacks
+                originating from Atherium, caused by a malfunction in the IADOS AI, targeting both national and civilian
+                infrastructure.
+            </p>
+        </article>
+
+        <article>
+            <h3>2022 Attack on Drijvende</h3>
+            <p>In 2022, the city of Drijvende withstood multiple enemy missile strikes, safeguarding both its citizens
+                and infrastructure—thanks to NUXCORP's prefabricated housing units engineered for extreme resilience.
+            </p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>contact@nuxcorp.fa | +1 800 NUXCORP | u/nuxcorp</p>
+        <p>102 Sadibenz Street, Narvia City, State of Narvia 90210</p>
+        <p>NUXCORP © 2025</p>
+    </footer>
+
+</body>
+
+</html>
