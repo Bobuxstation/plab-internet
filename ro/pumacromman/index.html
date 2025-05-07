@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leading Defense Tech | Puma Armaments</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            font-family: "Inter", sans-serif;
+        }
+        html,
+        body {
+            margin: 0;
+        }
+        .navigation {
+            height: auto;
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 5px;
+            margin: 0;
+            border-bottom: darkgray solid 1px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn {
+            width: auto;
+            background: transparent;
+            border: none;
+            font-size: 15px;
+            padding: 5px 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: color 1s ease;
+            color: black;
+        }
+        .title {
+            width: auto;
+            background: transparent;
+            border: none;
+            font-family: "Press Start 2P", system-ui;;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: color 1s ease;
+            color: black;
+        }
+        header {
+            background: url(https://parispeaceforum.org/app/uploads/2023/09/net-zero-space-initiative-1.jpg) no-repeat center center / cover;
+            height: 92.45vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        section {
+            padding: 60px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .left-buttons,
+        .right-buttons {
+            display: flex;
+            gap: 5px;
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid rgb(260, 260, 260);
+            white-space: nowrap;
+            letter-spacing: .15em;
+            animation: 
+            typing 2.5s steps(40, end),
+            blink-caret 1s step-end 2.5;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: rgb(260, 260, 260); }
+        }
+        section {
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        article {
+            background: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #007bff;
+        }
+        article p{
+            font-size: 110%;
+        }
+        form {
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: rgb(255, 255, 255);
+        }
+        input, textarea {
+            padding: 6px;
+            width: 100%;
+        }
+        textarea {
+            max-width: 100%;
+            height: 130px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarHeight = document.querySelector('.navigation').offsetHeight;
+
+            function scrollToSection(selector) {
+                const section = document.querySelector(selector);
+                const offsetTop = section.offsetTop - navbarHeight;
+
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+            
+            document.querySelector(".btn.about").addEventListener('click', function (e) {
+                e.preventDefault();
+                scrollToSection('#about');
+            });
+            document.querySelector(".btn.wedo").addEventListener('click', function (e) {
+                e.preventDefault();
+                scrollToSection('#wedo');
+            });
+            document.querySelector(".btn.portfolio").addEventListener('click', function (e) {
+                e.preventDefault();
+                scrollToSection('#product');
+            });
+            document.querySelector(".btn.contakt").addEventListener('click', function (e) {
+                e.preventDefault();
+                scrollToSection('#contact');
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="left-buttons">
+            <button class="title">PUMA ARMAMENTS</button>
+        </div>
+        <div class="right-buttons">
+            <button class="btn about">Who we are</button>
+            <button class="btn wedo">What we do</button>
+            <button class="btn portfolio">Products</button>
+            <button class="btn contakt">Contact us</button>
+        </div>
+    </nav>
+    <header>
+        <section style="margin: auto; padding: 0; text-align: center; position: relative; z-index: 2;">
+            <h1 style="z-index: 2;font-size: 150%;">Ensuring those we serve</h1>
+            <h1 style="z-index: 2;font-size: 350%;" class="typewriter">ALWAYS STAY AHEAD.</h1>
+        </section>
+    </header>
+    <br>
+    <section id="about">
+        <h1>Who We Are</h1>
+        <br>
+        <p>Puma Armaments is a cutting-edge scientific body specializing in defense tech and advocating innovative solutions for modern warfare. Puma Armaments is committed to delivering state-of-the-art systems that empower nations to stay ahead in defense capabilities. With a focus on precision, reliability, and excellence, we strive to redefine the standards of the defense industry. </p>
+    </section>
+    <section id="wedo">
+        <h1>What We Do</h1>
+        <br>
+        <p>Puma Armaments is at the forefront of developing advanced defense technologies, including autonomous systems, cyber warfare solutions, and next-generation weaponry. Our mission is to provide our clients with the tools they need to ensure national security and maintain a strategic advantage in an ever-evolving global landscape.</p>
+    </section>
+    <section id="product">
+        <h1>Product Portfolio</h1>
+        <br>
+        <article>
+            <h2>DL-50 "Dreadlock" Super-Heavy Battleship</h2>
+            <br>
+            <p >When overkill doesn't work, you're not using enough.</p>
+            <p>A state-of-the-art super-heavy battleship. From the era of the dreadnoughts, revived for modern warfare.</p>
+            <br>
+            <p>The advanced weapons guiding systems allows sailors to identify targets using air and land assets.</p>
+            <p>It is equipped with precision, area-effect, and volume fire both indirect and direct.</p>
+            <p>The Dreadlock is a proven design that has underwent various testings, both in real combat and artificial. Loved by allied forces, light on logistics, hated by enemy forces.</p>
+            <br>
+            <p>Militaries must acquire the DL-50 directly. License production is only available to specific allies in accordance to diplomatic charters.</p>
+        </article>
+        <article>
+            <h2>AGAD-059 Autonomous Ground Attack Drone</h2>
+            <br>
+            <p>Fully autonomous ground attack drone. Fire and forget.</p>
+            <br>
+            <p>Best used in high-intensity combat, where traditional fire support is sluggish.</p>
+            <p>Equipped with AI systems which has underwent serious tests to ensure its reliability.</p>
+            <p>Armed with HIEDPS (High-Intensity Energy Discharge Propelling Spall), effective against infantry and armor.</p>
+            <p>Light, can be deployed by foot infantry. Dirt cheap.</p>
+            <br>
+            <p>Militaries can acquire license production from Puma Armamaments, or request direct delivery. Restrictions may be placed in accordance to diplomatic charters.</p>
+        </article>
+        <article>
+            <h2>MFP-7 Multirole Transport Aircraft</h2>
+            <br>
+            <p>Reliable transport aircraft.</p>
+            <br>
+            <p>Its platform is designed with adaptability in mind.</p>
+            <p>Can be fitted with armamaments to allow it to fly over intense battle</p>
+            <p>4 engines. Designed by Specific Motors. Reliable, cheap to maintain.</p>
+            <br>
+            <p>Militaries must acquire the MFP-7 directly. License production is only available to specific allies in accordance to diplomatic charters.</p>
+        </article>
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <br>
+        <form method="GET">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <section style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); width: 100vw; max-width: 100%; margin-top: 30px; padding: 40px;">
+        <p style="text-align: center;">©2025 Puma Armamaments. All rights reserved.</p>
+    </section>
+</body>
+</html>
