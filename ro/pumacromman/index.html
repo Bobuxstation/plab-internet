@@ -100,6 +100,11 @@
             typing 2.5s steps(40, end),
             blink-caret 1s step-end 2.5;
         }
+        #typedabout, #typedwedo, #typedproduct, #typedpeople {
+            overflow: hidden;
+            border-right: .15em solid rgb(260, 260, 260);
+            white-space: nowrap;
+        }
         @keyframes typing {
             from { width: 0 }
             to { width: 100% }
@@ -167,7 +172,25 @@
                 e.preventDefault();
                 scrollToSection('#contact');
             });
+
+            const elementsToObserve = [
+                document.getElementById('typedabout'),
+                document.getElementById('typedwedo'),
+                document.getElementById('typedproduct'),
+                document.getElementById('typedpeople')
+            ];
+
+            const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'typing 2.5s steps(40, end), blink-caret 1s step-end infinite';
+                } else {
+                    entry.target.style.animation = 'none';
+                }
+            });
         });
+        elementsToObserve.forEach(element => observer.observe(element));
+});
         
     </script>
 </head>
@@ -191,17 +214,17 @@
     </header>
     <br>
     <section id="about">
-        <h1>Who We Are</h1>
+        <h1 id="typedabout">Who We Are _</h1>
         <br>
         <p>Puma Armaments is a cutting-edge scientific body specializing in defense tech and advocating innovative solutions for modern warfare. Puma Armaments is committed to delivering state-of-the-art systems that empower nations to stay ahead in defense capabilities. With a focus on precision, reliability, and excellence, we strive to redefine the standards of the defense industry. </p>
     </section>
     <section id="wedo">
-        <h1>What We Do</h1>
+        <h1 id="typedwedo">What We Do _</h1>
         <br>
         <p>Puma Armaments is at the forefront of developing advanced defense technologies, including autonomous systems, cyber warfare solutions, and next-generation weaponry. Our mission is to provide our clients with the tools they need to ensure national security and maintain a strategic advantage in an ever-evolving global landscape.</p>
     </section>
     <section id="product">
-        <h1>Product Portfolio</h1>
+        <h1 id="typedproduct">Product Portfolio _</h1>
         <br>
         <article>
             <h2>DL-50 "Dreadlock" Super-Heavy Battleship</h2>
@@ -225,7 +248,7 @@
             <p>Armed with HIEDPS (High-Intensity Energy Discharge Propelling Spall), effective against infantry and armor.</p>
             <p>Light, can be deployed by foot infantry. Dirt cheap.</p>
             <br>
-            <p>Militaries can acquire license production from Puma Armaments, or request direct delivery. Restrictions may be placed in accordance to diplomatic charters.</p>
+            <p>Militaries can acquire license production from Puma Armamaments, or request direct delivery. Restrictions may be placed in accordance to diplomatic charters.</p>
         </article>
         <article>
             <h2>MFP-7 Multirole Transport Aircraft</h2>
@@ -233,11 +256,18 @@
             <p>Reliable transport aircraft.</p>
             <br>
             <p>Its platform is designed with adaptability in mind.</p>
-            <p>Can be fitted with armaments to allow it to fly over intense battle</p>
+            <p>Can be fitted with armamaments to allow it to fly over intense battle</p>
             <p>4 engines. Designed by Specific Motors. Reliable, cheap to maintain.</p>
             <br>
             <p>Militaries must acquire the MFP-7 directly. License production is only available to specific allies in accordance to diplomatic charters.</p>
         </article>
+    </section>
+    <section>
+        <h1 id="typedpeople">Our People _</h1>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <p style="font-size: x-large; flex: 1;">Our team is composed of experts in various fields, including engineering, computer science, and military strategy. We are dedicated to pushing the boundaries of what is possible in defense technology.</p>
+            <img src="https://cdn.shopify.com/s/files/1/0306/6419/6141/articles/engineering_071526c8-ed68-4b18-92f1-6f4e65c81219.png?v=1633539556" alt="Our Team" style="width: 200%; max-width: 450px; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+        </div>
     </section>
     <section id="contact">
         <h1>Contact Us</h1>
@@ -253,7 +283,7 @@
         </form>
     </section>
     <section style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); width: 100vw; max-width: 100%; margin-top: 30px; padding: 40px;">
-        <p style="text-align: center;">©2025 Puma Armaments. All rights reserved.</p>
+        <p style="text-align: center;">©2025 Puma Armamaments. All rights reserved.</p>
     </section>
 </body>
 </html>
